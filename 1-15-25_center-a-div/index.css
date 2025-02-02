@@ -1,0 +1,30 @@
+.site {
+    border: 1px solid blue;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+    /* first approach */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* second approach */
+    /* position: relative; */
+
+    /* third approach */
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    outline: 1px solid red;
+    width: 500px;
+    height: 500px;
+
+    /* second approach */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}

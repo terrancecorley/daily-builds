@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 1em;
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+}
+
+.grid {
+    height: 1000px;
+    outline: 1px solid red;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid > div {
+    outline: 1px solid black;
+}
