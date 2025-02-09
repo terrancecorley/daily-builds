@@ -1,0 +1,71 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 50%;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:visited, nav ul a:active {
+    color: black;
+}
+
+header button {
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+header button:hover {
+    cursor: pointer;
+}
+
+.main-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+.main-content-col-one {
+    font-weight: bold;
+}
+
+.main-tagline {
+    font-size: 5em;
+}
+
+.main-content-col-two {
+    background-color: gainsboro;
+}
+
+.main-content-col-one,
+.main-content-col-two {
+    padding: 1em;
+}
