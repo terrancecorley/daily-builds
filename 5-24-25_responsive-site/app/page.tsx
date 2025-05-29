@@ -3,7 +3,11 @@ export default function Home() {
         <div className="grid grid-cols-1 grid-rows-[auto, 1fr, auto] h-full">
             <header className="flex justify-between p-4">
                 <h1>Site Logo</h1>
-                <button>X</button>
+                <button className="h-5 w-5 flex flex-col justify-between cursor-pointer">
+                    <div className="h-0.5 bg-cyan-500 w-full"></div>
+                    <div className="h-0.5 bg-cyan-500 w-full"></div>
+                    <div className="h-0.5 bg-cyan-500 w-full"></div>
+                </button>
             </header>
             <main>
                 <div className="p-4">
