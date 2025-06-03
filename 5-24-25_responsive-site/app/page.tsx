@@ -17,11 +17,14 @@ export default function Home() {
                     <div className="h-0.5 bg-cyan-500 w-full"></div>
                 </button>
                 {isMobileMenuOpen && (
-                    <div className="fixed inset-0 z-50 bg-black text-white opacity-70">
-                        <button onClick={() => setIsMobileMenuOpen(false)}>
+                    <div className="flex flex-col p-2 text-lg fixed inset-0 z-50 bg-black text-white opacity-70">
+                        <button
+                            className="hover:cursor-pointer self-end w-10 h-10"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
                             X
                         </button>
-                        <ul>
+                        <ul className="flex flex-col h-full gap-10 items-center justify-center">
                             <li>Nav Item 1</li>
                             <li>Nav Item 2</li>
                             <li>Nav Item 3</li>
