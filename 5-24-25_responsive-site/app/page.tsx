@@ -9,7 +9,7 @@ export default function Home() {
             <header className="flex justify-between p-4">
                 <h1>Site Logo</h1>
                 <button
-                    className="h-5 w-5 flex flex-col justify-between cursor-pointer"
+                    className="md:hidden h-5 w-5 flex flex-col justify-between cursor-pointer"
                     onClick={() => setIsMobileMenuOpen(true)}
                 >
                     <div className="h-0.5 bg-cyan-500 w-full"></div>
@@ -35,39 +35,46 @@ export default function Home() {
                 )}
             </header>
             <main>
-                <div className="p-4">
+                <div className="p-4 md:grid md:grid-cols-[1fr_3fr]">
+                    <ul className="hidden md:flex flex-col h-full gap-10 items-center">
+                        <li>Nav Item 1</li>
+                        <li>Nav Item 2</li>
+                        <li>Nav Item 3</li>
+                        <li>Nav Item 4</li>
+                        <li>Nav Item 5</li>
+                    </ul>
                     <ul className="grid grid-cols-1 gap-4">
-                        <li>
+                        <li className="flex justify-center items-center">
                             <img
                                 src="https://cdn.pixabay.com/photo/2025/04/19/18/20/goose-9544312_640.jpg"
                                 alt="photo of a duck"
                             />
                         </li>
-                        <li>
+                        <li className="flex justify-center items-center">
                             <img
                                 src="https://cdn.pixabay.com/photo/2025/04/19/18/20/goose-9544312_640.jpg"
                                 alt="photo of a duck"
                             />
                         </li>
-                        <li>
+                        <li className="flex justify-center items-center">
                             <img
                                 src="https://cdn.pixabay.com/photo/2025/04/19/18/20/goose-9544312_640.jpg"
                                 alt="photo of a duck"
                             />
                         </li>
-                        <li>
+                        <li className="flex justify-center items-center">
                             <img
                                 src="https://cdn.pixabay.com/photo/2025/04/19/18/20/goose-9544312_640.jpg"
                                 alt="photo of a duck"
                             />
                         </li>
-                        <li>
+                        <li className="flex justify-center items-center">
                             <img
                                 src="https://cdn.pixabay.com/photo/2025/04/19/18/20/goose-9544312_640.jpg"
                                 alt="photo of a duck"
                             />
                         </li>
-                        <li>
+                        <li className="flex justify-center items-center">
                             <img
                                 src="https://cdn.pixabay.com/photo/2025/04/19/18/20/goose-9544312_640.jpg"
                                 alt="photo of a duck"
