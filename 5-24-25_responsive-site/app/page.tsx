@@ -33,17 +33,24 @@ export default function Home() {
                         </ul>
                     </div>
                 )}
+                <ul className="hidden xl:flex items-center justify-end gap-4">
+                    <li>Nav Item 1</li>
+                    <li>Nav Item 2</li>
+                    <li>Nav Item 3</li>
+                    <li>Nav Item 4</li>
+                    <li>Nav Item 5</li>
+                </ul>
             </header>
             <main>
-                <div className="p-4 md:grid md:grid-cols-[1fr_3fr]">
-                    <ul className="hidden md:flex flex-col h-full gap-10 items-center">
+                <div className="p-4 md:grid md:grid-cols-[1fr_3fr] xl:grid-cols-1">
+                    <ul className="hidden md:flex flex-col h-full gap-10 items-center xl:hidden">
                         <li>Nav Item 1</li>
                         <li>Nav Item 2</li>
                         <li>Nav Item 3</li>
                         <li>Nav Item 4</li>
                         <li>Nav Item 5</li>
                     </ul>
-                    <ul className="grid grid-cols-1 gap-4">
+                    <ul className="grid grid-cols-1 gap-4 xl:grid-cols-3">
                         <li className="flex justify-center items-center">
                             <img
                                 src="https://cdn.pixabay.com/photo/2025/04/19/18/20/goose-9544312_640.jpg"
